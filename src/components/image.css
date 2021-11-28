@@ -1,0 +1,128 @@
+*{
+      margin:0;
+      padding:0;
+}
+
+.container{
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 20px auto;
+      align-items: center;
+}
+
+.header_title{
+      font-size: 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      background-color: rgb(185, 132, 235);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+}
+
+.header_sec_title{
+      font-size: 16px;
+      margin-top: 30px;
+      color: rgb(201, 16, 16);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.area{
+      font-size: 16px;
+      margin-top: 30px;
+      color: rgb(201, 16, 16);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      display: none;
+}
+.areahide{
+      font-size: 16px;
+      margin-top: 30px;
+      color: rgb(201, 16, 16);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.areahide.active{
+      font-size: 16px;
+      margin-top: 30px;
+      color: rgb(201, 16, 16);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      display: none;
+
+}
+.area.active{
+      display: block;
+}
+.header_sec_title.active{
+      display: none;
+}
+
+.file_select{
+      height: 50px;
+      width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+input[type="file"]{
+      width: 25%;
+      border-radius: 25px ;
+      font-size: 14px;
+      border: 1px solid gray;
+      background-color: rgb(230, 230, 230);
+}
+
+.crop_image_holder{
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+
+}
+.cropButton{
+      width: 15%;
+      margin: 10px auto;
+      height: 40px;
+      font-size: 16px;
+      background-color: rgb(241, 48, 48);
+      color: white;
+      border: none;
+}
+.coordinates{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(102, 102, 102);
+      margin: 0 auto;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      
+}
+
+.coordinates.active{
+display: none;
+}
+.result_image{
+      width: auto;
+      height: 20rem;
+      margin: 10px auto;
+}
+
+.result_image img{
+     height: 100%;
+     width: 100%;
+}
+
+
+::-webkit-file-upload-button{
+      width: 100px;
+      border: 2px solid rgb(185, 132, 235);
+      height:30px;
+      border-radius: 25px;
+      background-color: rgb(185, 132, 235);
+      color: white;
+}
+
