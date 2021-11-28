@@ -6,7 +6,7 @@ import ReactCrop from "react-image-crop";
 function ImageCrop() {
   const [srcImg, setSrcImg] = useState();
   const [image, setImage] = useState(null);
-  const [crop, setCrop] = useState({ aspect: 16 / 7 });
+  const [crop, setCrop] = useState({ aspect: 16 / 6 });
   const [result, setResult] = useState(null);
   const [hideinst, sethideinst] = useState(false);
   const [area, setarea] = useState(false);
@@ -21,7 +21,7 @@ function ImageCrop() {
   };
 
   const getCroppedImg = () => {
-      if(crop.width || crop.height != 0){
+      if(crop.width || crop.height !== 0){
       const canvas = document.createElement("canvas");
       const scaleX = image.naturalWidth / image.width;
       const scaleY = image.naturalHeight / image.height;
@@ -83,18 +83,18 @@ function ImageCrop() {
               crop={crop}
               onChange={setCrop}
             />
-
+          
             <button className="cropButton" onClick={getCroppedImg}>
               Crop
             </button>
-          </div>
-        )}
+            </div>
+         )}
         <div className={`coordinates ${axis ? 'active' : ""}`}>
         <h3>-x : {parseFloat(crop.x).toFixed(0)}, -y : {parseFloat(crop.y).toFixed(0)}, height : {parseFloat(crop.height).toFixed(0)}, width : {parseFloat(crop.width).toFixed(0)}</h3>
         </div>
         {result && (
           <div className="result_image">
-            <img src={result} alt="cropped image" />
+            <img src={result} alt="not_found" />
           </div>
         )}
       </div>
