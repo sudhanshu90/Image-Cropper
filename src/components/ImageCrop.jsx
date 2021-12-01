@@ -98,7 +98,7 @@ function ImageCrop() {
           <div className="result_image">
             <img src={result} alt="not_found" />
             <a href={result} className="dawnlaod" download>
-          Dawnlaod
+          Download
         </a>
           </div>
          
