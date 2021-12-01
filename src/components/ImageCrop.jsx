@@ -87,6 +87,8 @@ function ImageCrop() {
             <button className="cropButton" onClick={getCroppedImg}>
               Crop
             </button>
+
+           
             </div>
          )}
         <div className={`coordinates ${axis ? 'active' : ""}`}>
@@ -95,7 +97,12 @@ function ImageCrop() {
         {result && (
           <div className="result_image">
             <img src={result} alt="not_found" />
+            <a href={result} className="dawnlaod" download>
+          Dawnlaod
+        </a>
           </div>
+         
+          
         )}
       </div>
     </div>
